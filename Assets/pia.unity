@@ -6868,7 +6868,7 @@ MonoBehaviour:
         m_CallState: 2
   hours: 0
   minutes: 0
-  seconds: 40
+  seconds: 10
   startAtRuntime: 1
   hoursDisplay: 1
   minutesDisplay: 1
@@ -6879,7 +6879,7 @@ MonoBehaviour:
   textMeshProText: {fileID: 0}
   standardSlider: {fileID: 0}
   dialSlider: {fileID: 0}
-  timeRemaining: 40
+  timeRemaining: 10
 --- !u!43 &1387099430
 Mesh:
   m_ObjectHideFlags: 0
@@ -7262,7 +7262,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 462574, guid: 9fa0eb6531853e246931f87efac4e921, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -6.1
+      value: 0.03
       objectReference: {fileID: 0}
     - target: {fileID: 462574, guid: 9fa0eb6531853e246931f87efac4e921, type: 3}
       propertyPath: m_LocalPosition.z
