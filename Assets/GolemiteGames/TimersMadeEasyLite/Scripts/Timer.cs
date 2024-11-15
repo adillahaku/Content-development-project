@@ -6,7 +6,6 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Events;
 
-
 public class Timer : MonoBehaviour
 {
     public UnityEvent onTimerEnd;
