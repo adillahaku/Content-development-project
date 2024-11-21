@@ -388,5 +388,5 @@ public class Timer : MonoBehaviour
     private void OnValidate()
     {
         timeRemaining = ConvertToTotalSeconds(hours, minutes, seconds);
-    }
+    }
 }
