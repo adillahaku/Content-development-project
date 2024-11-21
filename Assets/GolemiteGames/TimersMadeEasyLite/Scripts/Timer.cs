@@ -9,6 +9,7 @@ using UnityEngine.Events;
 
 public class Timer : MonoBehaviour
 {
+    public UnityEvent onTimerStart;
     public UnityEvent onTimerEnd;
 
     [Range(0, 23)]
