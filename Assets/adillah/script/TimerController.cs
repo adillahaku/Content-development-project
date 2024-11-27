@@ -1,38 +1,30 @@
 using UnityEngine;
 using TMPro;
 
-public class DeliveryTimer : MonoBehaviour
+public class TimerController : MonoBehaviour
 {
-    public float timeLimit = 60f;  // Batas waktu dalam detik
-    private float currentTime;
     public TextMeshProUGUI timerText;  // Referensi ke UI Text
-
-    private bool isTimerRunning = false;
-
-    void Start()
-    {
-        currentTime = timeLimit;
-    }
+    private float currentTime = 0f;    // Waktu berjalan
+    private bool isTimerRunning = false; // Apakah timer aktif?
 
     void Update()
     {
         if (isTimerRunning)
         {
-            currentTime -= Time.deltaTime;
-            timerText.text = "Time Left: " + Mathf.Ceil(currentTime) + "s";
-
-            if (currentTime <= 0)
-            {
-                isTimerRunning = false;
-                Debug.Log("Time's up!");
-                // Logika untuk waktu habis
-            }
+            currentTime += Time.deltaTime;  // Tambahkan waktu setiap frame
+            timerText.text = "Time: " + currentTime.ToString("F2") + "s"; // Update UI
         }
     }
 
     public void StartTimer()
     {
-        currentTime = timeLimit;
         isTimerRunning = true;
+        currentTime = 0f;  // Reset timer
+    }
+
+    public void StopTimer()
+    {
+        isTimerRunning = false;
+        Debug.Log("Timer Stopped. Final Time: " + currentTime.ToString("F2") + "s");
     }
 }
