@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/pia.unity
+    guid: 5b915e4d510d71e4992187c611a2baf3
   m_configObjects: {}
